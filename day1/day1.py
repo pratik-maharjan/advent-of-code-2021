@@ -7,7 +7,7 @@ with open("day1-input.txt") as file:
 for i in range(1, len(lines)):
     if lines[i] > lines[i-1]:
         part1val += 1
-print part1val
+print("Part 1: {}").format(part1val)
 
 part2val = 0
 combination = []
@@ -17,4 +17,4 @@ for i in range(0, len(lines)-2):
 for i in range(1, len(combination)):
     if combination[i] > combination[i-1]:
         part2val += 1
-print part2val
+print("Part 2: {}").format(part2val)

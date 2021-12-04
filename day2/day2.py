@@ -14,7 +14,7 @@ for l in lines:
     elif l.startswith("up"):
         vertical -= int(l.split(' ')[1])
 part1val = vertical * horizontal
-print(part1val)
+print("Part 1: {}").format(part1val)
 
 part2val = 0
 aim = 0
@@ -29,4 +29,4 @@ for l in lines:
     elif l.startswith("up"):
         aim -= int(l.split(' ')[1])
 part2val = vertical * horizontal
-print(part2val)
+print("Part 2: {}").format(part2val)
